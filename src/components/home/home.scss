@@ -1,0 +1,112 @@
+.landing_conatiner{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.Earth_Can {
+    position: absolute !important;
+    top: 25%;
+    right: 40%;
+    z-index: 5; 
+}
+.ship-model{
+    position: absolute;
+    width: 40% !important;
+    left: 60% !important;
+    z-index: 5; 
+}
+.Texual_container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.Texual_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.Texual_content {
+    color: white;
+    z-index: 10; /* Ensure text is above the models */
+    width: 55%;
+    margin: 0;
+    position: absolute;
+    top: 52%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    padding: 80px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) , rgba(96, 85, 83, 0.15)); 
+    backdrop-filter: blur(9px);
+    font-weight: 300;
+}
+h2{
+    font-weight: 300 !important;
+    font-size: 25px !important;
+}
+h1{
+    margin: 5px !important;
+    font-size: 60px !important;
+    word-spacing: 5px !important;
+    font-weight: 600 !important;
+    color: #40E0D0 !important;
+    line-height: 100px !important;
+}
+p{
+    line-height: 25px !important;
+}
+
+.move_btn {
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
+  }
+}
+
+$colors: (
+  move_btn: #40E0D0
+);
+
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #161717;
+  }
+}
+
+.move_btn {
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #fff;
+    border: 1px solid white;
+  }
+}
+
+// Basic button styles
+.move_btn {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #161717;
+}
