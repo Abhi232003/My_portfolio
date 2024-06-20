@@ -1,0 +1,38 @@
+.card_link {
+    width: 300px;
+    margin: 20px;
+    text-decoration: none; /* Ensure the link itself has no text decoration */
+}
+
+.custom-card {
+    border: none !important; /* Remove the border */
+    background-color: rgba(77, 77, 77, 0.3) !important; /* Set your desired background color */
+    color: rgb(255, 255, 255) !important;
+    backdrop-filter: blur(4px) !important;
+    border-radius: 20px !important;
+}
+
+.card-group-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures the wrapper takes up the full viewport width */
+}
+
+.card-group-wrapper .card-group {
+    display: flex;
+    flex-wrap: wrap; /* Adjust this if you want cards to wrap when they don't fit in one line */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.planet_on_card {
+    height: 300px !important;
+}
+
+.custom-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-decoration: none; /* Ensure list items have no text decoration */
+}
