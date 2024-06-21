@@ -12,12 +12,12 @@ import { useFrame } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/mars.gltf')
+  const { nodes, materials } = useGLTF('/Mars/mars.gltf')
   const meshRef = useRef()
 
   useFrame((state, delta) => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += delta * 0.05 // Adjust the speed as needed
+      meshRef.current.rotation.y += 0.0008 // Adjust the speed as needed
     }
   })
 
@@ -28,4 +28,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/mars.gltf')
+useGLTF.preload('/Mars/mars.gltf')

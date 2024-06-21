@@ -7,6 +7,9 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import { Canvas } from '@react-three/fiber';
 import Earth from '../../../public/Earth';
 import Mars from '../../../public/Mars';
+import Mercury from '../../../public/Mercury';
+import Venus from '../../../public/Venus';
+import Jupiter from '../../../public/Jupiter';
 
 function About() {
     return (
@@ -23,41 +26,19 @@ function About() {
                     <Link className="card_link" to="/">
                         <Card className="custom-card">
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Education</Card.Title>
                                 <Card.Text>
                                     <ul className="custom-list">
-                                        <li>First list item</li>
-                                        <li>Second list item</li>
-                                        <li>Third list item</li>
+                                        <li>- Background</li>
+                                        <li>- Institutions</li>
+                                        <li>- Qualifications</li>
                                     </ul>
                                 </Card.Text>
                             </Card.Body>
                             <Canvas className="planet_on_card">
                                 <pointLight position={[-5, 3, 2]} intensity={300} color="#FFFFFF" /> {/* Use white color */}
                                 <Suspense fallback={null}>
-                                    <Mars scale={[1.7, 1.7, 1.7]} position={[1, -1, 0]} />
-                                </Suspense>
-                            </Canvas>
-                        </Card>
-                    </Link>
-
-
-                    <Link className="card_link" to="/">
-                        <Card className="custom-card">
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    <ul className="custom-list">
-                                        <li>First list item</li>
-                                        <li>Second list item</li>
-                                        <li>Third list item</li>
-                                    </ul>
-                                </Card.Text>
-                            </Card.Body>
-                            <Canvas className="planet_on_card">
-                                <pointLight position={[-5, 3, 2]} intensity={300} color="#FFFFFF" /> {/* Use white color */}
-                                <Suspense fallback={null}>
-                                    <Earth scale={[1.8, 1.8, 1.8]} position={[1, -1, 0]} /> {/* Increase the size of the Earth */}
+                                    <Mercury scale={[3.3, 3.3, 3.3]} position={[1, -1, 0]} /> {/* Increase the size of the Earth */}
                                 </Suspense>
                             </Canvas>
                         </Card>
@@ -66,19 +47,19 @@ function About() {
                     <Link className="card_link" to="/">
                         <Card className="custom-card">
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Technical Skills</Card.Title>
                                 <Card.Text>
                                     <ul className="custom-list">
-                                        <li>First list item</li>
-                                        <li>Second list item</li>
-                                        <li>Third list item</li>
+                                        <li>- Tools</li>
+                                        <li>- Knowledge</li>
+                                        <li>- Proficiency</li>
                                     </ul>
                                 </Card.Text>
                             </Card.Body>
                             <Canvas className="planet_on_card">
                                 <pointLight position={[-5, 3, 2]} intensity={300} color="#FFFFFF" /> {/* Use white color */}
                                 <Suspense fallback={null}>
-                                    <Earth scale={[1.8, 1.8, 1.8]} position={[1, -1, 0]} /> {/* Increase the size of the Earth */}
+                                    <Venus scale={[3.2, 3.2, 3.2]} position={[1, -1, 0]} /> {/* Increase the size of the Earth */}
                                 </Suspense>
                             </Canvas>
                         </Card>
@@ -87,19 +68,40 @@ function About() {
                     <Link className="card_link" to="/">
                         <Card className="custom-card">
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Projects</Card.Title>
                                 <Card.Text>
                                     <ul className="custom-list">
-                                        <li>First list item</li>
-                                        <li>Second list item</li>
-                                        <li>Third list item</li>
+                                        <li>- Portfolio</li>
+                                        <li>- Overview</li>
+                                        <li>- Highlights</li>
                                     </ul>
                                 </Card.Text>
                             </Card.Body>
                             <Canvas className="planet_on_card">
                                 <pointLight position={[-5, 3, 2]} intensity={300} color="#FFFFFF" /> {/* Use white color */}
                                 <Suspense fallback={null}>
-                                    <Earth scale={[1.8, 1.8, 1.8]} position={[1, -1, 0]} /> {/* Increase the size of the Earth */}
+                                    <Mars scale={[1.65, 1.65, 1.65]} position={[1, -1, 0]} />
+                                </Suspense>
+                            </Canvas>
+                        </Card>
+                    </Link>
+
+                    <Link className="card_link" to="/">
+                        <Card className="custom-card">
+                            <Card.Body>
+                                <Card.Title>Experience</Card.Title>
+                                <Card.Text>
+                                    <ul className="custom-list">
+                                        <li>- Roles</li>
+                                        <li>- History</li>
+                                        <li>- Timeline</li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                            <Canvas className="planet_on_card">
+                                <pointLight position={[-5, 3, 2]} intensity={300} color="#FFFFFF" /> {/* Use white color */}
+                                <Suspense fallback={null}>
+                                    <Jupiter scale={[1.65, 1.65, 1.65]} position={[1, -1, 0]} />
                                 </Suspense>
                             </Canvas>
                         </Card>

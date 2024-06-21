@@ -1,12 +1,18 @@
 .card_link {
     width: 300px;
-    margin: 20px;
+    margin: 40px;
     text-decoration: none; /* Ensure the link itself has no text decoration */
+}
+.card_link:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+    background-color: black !important; 
+    border-radius: 20px !important;
 }
 
 .custom-card {
     border: none !important; /* Remove the border */
-    background-color: rgba(77, 77, 77, 0.3) !important; /* Set your desired background color */
+    background-color: rgba(58, 57, 57, 0.3) !important; /* Set your desired background color */
     color: rgb(255, 255, 255) !important;
     backdrop-filter: blur(4px) !important;
     border-radius: 20px !important;
@@ -35,4 +41,9 @@
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
     text-decoration: none; /* Ensure list items have no text decoration */
+    margin-top: 20px;
+}
+.custom-list li{
+    font-size: 0.9em !important;
+    line-height: 30px;
 }
